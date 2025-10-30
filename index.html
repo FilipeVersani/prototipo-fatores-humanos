@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto para Viajantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>✈️</span>
+                <span>Viajantes</span>
+            </div>
+            <nav>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+                <button class="btn btn-primary">Entrar</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Descubra Experiências Incríveis</h1>
+            <p>Encontre passeios e atividades personalizadas para sua próxima aventura</p>
+        </section>
+
+        <!-- Search and Filters -->
+        <div class="container">
+            <div class="search-box">
+                <div class="search-input-group">
+                    <input type="text" id="searchInput" placeholder="Buscar experiências..." />
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+
+                <!-- Activity Filter -->
+                <div class="filter-section">
+                    <h3>🎯 Tipo de Atividade</h3>
+                    <div class="filter-buttons" id="activityFilters"></div>
+                </div>
+
+                <!-- Location Filter -->
+                <div class="filter-section">
+                    <h3>📍 Localização</h3>
+                    <div class="filter-buttons" id="locationFilters"></div>
+                </div>
+
+                <!-- Profile Filter -->
+                <div class="filter-section">
+                    <h3>👥 Perfil do Viajante</h3>
+                    <div class="filter-buttons" id="profileFilters"></div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <section class="results-header">
+                <h2 id="resultCount">6 Experiências Encontradas</h2>
+            </section>
+
+            <div class="grid" id="experiencesGrid"></div>
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <p>Nenhuma experiência encontrada com os filtros selecionados.</p>
+                <button class="btn btn-primary" onclick="clearFilters()">Limpar Filtros</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Projeto para Viajantes. Todos os direitos reservados.</p>
+        <p style="color: #999; margin-top: 0.5rem;">Protótipo de Alta Fidelidade - Aula 03</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
